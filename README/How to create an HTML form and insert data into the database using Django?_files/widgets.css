@@ -1,0 +1,573 @@
+ /* ================================== *
+ **
+  ** Posts Featured (Widget)
+ **
+ * ================================== */
+
+.posts-ft-wg-item {
+    margin-bottom: 20px;
+}
+
+.posts-ft-wg-item:last-child {
+    margin-bottom: 0;
+}
+
+.posts-ft-wg-group-item {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.posts-ft-wg-group-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.posts-ft-wg-group-item img {
+    width: 68px;
+    height: 68px;
+}
+
+.posts-ft-wg-featured-post-thumbnail-cover {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+}
+
+.posts-ft-wg-featured-post-thumbnail img {
+    height: 224px;
+}
+
+.posts-ft-wg-featured-post-thumbnail span {
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.posts-ft-wg-featured-post-data {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.posts-ft-wg-featured-post-data-wrapper {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.posts-ft-wg-featured-post-data-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h4.posts-ft-wg-featured-post-title {
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h4.posts-ft-wg-featured-post-title a {
+    color: #fff;
+}
+
+.posts-ft-wg-featured-post-meta {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.posts-ft-wg-featured-post-cat-list {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+}
+
+.posts-ft-wg-group-item {
+    margin-left: 68px;
+}
+
+.posts-ft-wg-group-post-thumbnail {
+    float: left;
+    margin-left: -68px;
+    width: 68px;
+}
+
+.posts-ft-wg-group-post-data {
+    float: left;
+    padding-left: 15px;
+}
+
+h4.posts-ft-wg-group-post-title {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.posts-ft-wg-group-post-meta {
+    margin-top: 11px;
+}
+
+
+/*
+ * Responsive
+ * ----------------------------------
+ */
+
+@media screen and (max-width: 1184px) {
+    .posts-ft-wg-featured-post-thumbnail img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .posts-ft-wg-group-item { 
+        margin-left: 0;
+        width: 50%;
+        float: left;
+    }
+    
+    .posts-ft-wg-group-item .posts-ft-wg-item-content {
+        margin-left: 68px;
+    }
+    
+    .posts-ft-wg-group-post-thumbnail {
+        margin-left: -68px;
+        width: 68px;
+    }
+
+    h4.posts-ft-wg-featured-post-title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .posts-ft-wg-featured-post-thumbnail img {
+        height: 485px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .posts-ft-wg-featured-post-thumbnail img {
+        height: 401px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .posts-ft-wg-group-item { 
+        width: 100%;
+        float: none;
+    }
+    
+    .posts-ft-wg-featured-post-thumbnail img {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h4.posts-ft-wg-featured-post-title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .posts-ft-wg-featured-post-thumbnail img {
+        height: auto;
+    }
+}
+
+
+
+
+ /* ================================== *
+ **
+  ** Posts Grid (Widget)
+ **
+ * ================================== */
+
+.posts-grid-widget {
+    margin: -25px 0 0 -25px;
+}
+
+.posts-grid-wg-item-content {
+    margin-left: 25px;
+}
+
+.posts-grid-wg-item {
+    margin-top: 25px;
+}
+
+.posts-grid-wg-post-thumbnail img {
+    height: 111px;
+}
+
+.posts-grid-wg-featured-post-cat-list {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.posts-grid-wg-item:nth-child(4n) .posts-grid-wg-featured-post-cat-list a,.posts-grid-wg-item:nth-child(4n+1) .posts-grid-wg-featured-post-cat-list a {
+    background: #000;
+}
+
+.posts-grid-wg-item:nth-child(4n-1) .posts-grid-wg-featured-post-cat-list a,.posts-grid-wg-item:nth-child(4n-2) .posts-grid-wg-featured-post-cat-list a {
+    background: #ea3f06;
+}
+
+.posts-grid-wg-post-data {
+    margin-top: 9px;
+}
+
+h4.posts-grid-wg-post-title {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/*
+ * Responsive
+ * ----------------------------------
+ */
+
+@media screen and (max-width: 1184px) {
+    .posts-grid-wg-post-thumbnail img {
+        height: 98px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .posts-grid-wg-post-thumbnail img {
+        height: 251px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .posts-grid-wg-post-thumbnail img {
+        height: 204px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .posts-grid-wg-post-thumbnail img {
+        height: 163px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .posts-grid-wg-post-thumbnail img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .posts-grid-widget {
+        margin-left: 0;
+    }
+
+    .posts-grid-wg-item-content {
+        margin-left: 0;
+    }
+
+    .posts-grid-wg-item {
+        width: 100%;
+    }
+
+    h4.posts-grid-wg-post-title {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+/* ================================== *
+ **
+  ** Posts List (Widget)
+ **
+ * ================================== */
+ 
+.posts-list-widget-content {
+    margin-top: -20px; 
+}
+
+.posts-list-wg-item {
+    margin-top: 20px;
+    margin-left: 104px;
+}
+
+.posts-list-wg-post-thumbnail {
+    float: left;
+    width: 104px;
+    margin-left: -104px;
+}
+
+.posts-list-wg-post-thumbnail img {
+    height: 68px;
+}
+
+.posts-list-wg-post-data {
+    float: left;
+    padding-left: 15px;
+}
+
+h4.posts-list-wg-post-title {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.posts-grid-wg-post-meta {
+    margin-top: 11px;
+}
+
+
+/*
+ * Responsive
+ * ----------------------------------
+ */
+
+@media screen and (max-width: 1184px) {
+    .posts-list-wg-item {
+        margin-left: 92px;    
+    }
+    
+    .posts-list-wg-post-thumbnail {
+        width: 92px;
+        margin-left: -92px;
+    }
+
+    .posts-list-wg-post-thumbnail img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .posts-list-widget {
+        margin-top: -20px;
+    }
+    
+    .posts-list-widget-content {
+        margin-top: 0; 
+    }
+
+    .posts-list-wg-item:nth-child(2n+1) {
+        clear: left;
+    }
+
+    .posts-list-wg-item {
+        float: left;
+        width: 50%;
+        margin-left: 0; 
+    }
+
+    .posts-list-wg-item-content {
+        margin-left: 104px;
+    }
+
+    .posts-list-wg-post-thumbnail {
+        width: 104px;
+        margin-left: -104px;
+    }
+
+    .posts-list-wg-post-thumbnail img {
+        height: 68px;
+    }
+    
+    .posts-list-wg-post-data {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .posts-list-wg-item-content {
+        margin-left: 92px;
+    }
+    
+    .posts-list-wg-post-thumbnail {
+        width: 92px;
+        margin-left: -92px;
+    }
+
+    .posts-list-wg-post-thumbnail img {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .posts-list-wg-item {
+        width: 100%;
+    }
+    
+    .posts-list-wg-item-content {
+        margin-left: 104px;
+    }
+
+    .posts-list-wg-post-thumbnail {
+        width: 104px;
+        margin-left: -104px;
+    }
+
+    .posts-list-wg-post-thumbnail img {
+        height: 68px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .posts-list-wg-post-thumbnail {
+        width: 104px;
+    }
+
+    .posts-list-wg-post-thumbnail img {
+        width: 104px;
+        height: 68px;
+    }
+
+    h4.posts-list-wg-post-title {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+
+
+
+/* ================================== *
+ **
+  ** Advert (Widget)
+ **
+ * ================================== */
+
+@media screen and (max-width: 1023px) {
+    .posts-advert-widget {
+        text-align: center;
+    }
+}
+
+
+
+
+/* ================================== *
+ **
+  ** Instagram (Widget)
+ **
+ * ================================== */
+ 
+.instagram-widget-thumbnail {
+    width: 100%;
+    height: 83px;
+    overflow: hidden;
+    float: left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    -ms-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.instagram-widget a {
+    float: left;
+    width: 25%;
+    display: block;
+    overflow: hidden;
+}
+
+.instagram-widget a:hover .instagram-widget-thumbnail {
+    opacity: .75;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1184px) {
+    .instagram-widget-thumbnail {
+        height: 72px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .instagram-widget-thumbnail {
+        height: 184px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .instagram-widget-thumbnail {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .instagram-widget-thumbnail {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .instagram-widget-thumbnail {
+        height: 60px;
+    }
+}
+
+
+
+
+
+/* ================================== *
+ **
+  ** About Me (Widget)
+ **
+ * ================================== */
+
+ 
+.about-me-widget .about-me-element {
+    margin-bottom: 10px;
+}
+
+.about-me-widget .about-me-element:last-child {
+    margin-bottom: 0;
+}
+
+.about-me-widget-image-align-left {
+}
+
+.about-me-widget-image-align-center {
+    text-align: center;
+}
+
+.about-me-widget-image-align-right {
+    text-align: right;
+}
+
+.about-me-widget-image-round img {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
+
+.about-me-widget-descr p {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,45 @@
+{% extends "base_menu.html" %}
+{% block content %}
+<style>
+#container-fluid{
+     background-color:#116655;
+ 
+   }
+   #login{
+       color:#0033DD;
+   }
+
+
+
+</style>
+<br><br>
+<center><h1 style = "color: #0033DD; ">Log into Facebook</h1> </center>
+<br>
+<div id = "container-fluid">
+<p>
+
+<center>
+<form action = "" method = "POST">
+    {% csrf_token %}
+    {% for field in form %}
+      <p>
+         <br>
+        {{ field }}
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+  <br> 
+  <button id ="login" >Login </button>
+ 
+</form>
+</center>
+</p>
+
+</div>
+
+{% endblock %}

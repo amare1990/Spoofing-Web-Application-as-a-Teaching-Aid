@@ -1,0 +1,50 @@
+{% block sidebar %}
+{% load static %}
+ <br> <br>
+  <br> <br>
+   <br> <br>
+  <br> <br> 
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;            
+        }
+      
+       
+         #text-info{
+          font-weight:bold;
+          font-size:15px;
+          color:#3344AA;
+        
+        }
+</style>
+  <script >
+function display(){
+document.getElementById('text-info').innerHTML = "To see the details, you have to Login First Please!";
+       
+}
+
+</script>
+<!-- Sidebar Widgets Column -->
+<div class="col-md-12 float-right " backgound-color= "#ff0000">
+<div class="card my-4">
+        <h5 class="card-header">About Us</h5>
+    <div class="card-body">
+        <p class="card-text"> This awesome flavor is produced and sponsored by Google, facebook and Python Org. to help those solo people to have connected to the people across the globe with extremely fast somewhat privileged link and little bandwidth...!
+        <button id="text-info" onclick = "display()"> &nbsp Know More!</a></p>
+        
+    </div>
+
+   
+ <center>      
+ <div id = "container" background-color: white;>       
+<img src="{% static 'google.jpg' %}" width =100 height=100 alt="Google Logo">
+<img src="{% static 'facebook.png' %}" width =100 height=100 alt="facebook Logo">
+<img src="{% static 'django.jpeg' %}" width =100 height=100 alt="Python Django Logo">
+</div>
+</center>
+
+</div>
+</div>
+{% endblock sidebar %}
+

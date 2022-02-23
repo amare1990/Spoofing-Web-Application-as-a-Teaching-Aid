@@ -1,0 +1,50 @@
+{% extends "base_bootstrap.html" %}
+{% block navbar %}
+<style>
+.facebook{
+    font-size:30px;
+    font-weight: bold;
+    color:white;
+   }
+ .Ad{
+    color:black;
+    font-weight: bold;
+ }
+
+
+
+</style>
+
+
+
+<nav class="navbar navbar-light" style="background-color: #115599;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">{{ settings.APP_NAME }}</a>
+    </div>
+    <!-- https://stackoverflow.com/questions/22047251/django-dynamically-get-view-url-and-check-if-its-the-current-page -->
+    <ul class="nav navbar-nav">
+      {% url 'posts' as posts %}
+      <li {% if request.get_full_path == posts %} 
+      class="active" {% endif %}>
+          <a href="#"><span class = "facebook">facebook </span></a></li>   
+          
+    </ul>
+     
+    
+    <ul class="nav navbar-nav navbar-right">
+       
+        <li>
+        <a href="#" > <span class = "Ad">Connect with your friends and the world around you on ultrafast flavor, requiring little bandwidth and thus with little cost </span></a>
+        </li>
+       
+      
+      
+      
+    </ul>
+  </div>
+</nav>
+
+{% endblock %}
+{% block footer %} {% include 'sidebar.html' %} {% endblock %}
+

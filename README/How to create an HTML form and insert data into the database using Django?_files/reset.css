@@ -1,0 +1,109 @@
+*,
+* :before,
+* :after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+html, body, div, figure, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, font, img, ins, kbd, q, samp, small, strike, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+ 
+    .clearfix:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        display: block;
+        clear: both;
+    }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ 
+input:focus {
+	outline:0;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+	display: none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+    /* Fix IE7 display bug */
+    overflow:visible;
+    width:auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {	
+    padding:0;
+    border:0;
+    background:none;
+}
+
+textarea {
+    vertical-align: top;
+    overflow:auto;
+}
